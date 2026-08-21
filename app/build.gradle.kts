@@ -74,5 +74,8 @@ dependencies {
     kapt("com.google.dagger:hilt-compiler:2.50")
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
 
+    // WebRTC
+    implementation("org.webrtc:google-webrtc:1.0.32006")
+
     debugImplementation("androidx.compose.ui:ui-tooling")
 }
