@@ -96,7 +96,7 @@ fun SettingsScreen(
             Box(
                 modifier = Modifier
                     .size(88.dp)
-                    .shadow(16.dp, CircleShape, PurplePrimary.copy(alpha = 0.3f))
+                    .shadow(16.dp, CircleShape, ambientColor = PurplePrimary.copy(alpha = 0.3f), spotColor = PurplePrimary.copy(alpha = 0.3f))
                     .border(3.dp, PurplePrimary, CircleShape)
                     .clip(CircleShape)
                     .background(PurpleLight.copy(alpha = 0.15f)),
