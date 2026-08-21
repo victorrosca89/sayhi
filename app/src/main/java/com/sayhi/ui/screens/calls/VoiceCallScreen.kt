@@ -13,6 +13,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.graphicsLayer
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
@@ -108,7 +109,7 @@ fun VoiceCallScreen(
             Box(
                 modifier = Modifier
                     .size(140.dp)
-                    .shadow(20.dp, CircleShape, PurpleDeep.copy(alpha = 0.4f))
+                    .shadow(20.dp, CircleShape, ambientColor = PurpleDeep.copy(alpha = 0.4f), spotColor = PurpleDeep.copy(alpha = 0.4f))
                     .border(4.dp, Color(0xFF2D1B4E), CircleShape)
                     .clip(CircleShape)
                     .background(PurpleLight.copy(alpha = 0.15f)),
