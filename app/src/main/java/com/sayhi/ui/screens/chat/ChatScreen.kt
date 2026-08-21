@@ -196,7 +196,7 @@ private fun MessageBubble(message: Message, currentUserId: String) {
     ) {
         Column(
             modifier = Modifier.widthIn(max = 280.dp),
-            horizontalAlignment = if (isMine) Align.End else Align.Start
+            horizontalAlignment = if (isMine) Alignment.End else Alignment.Start
         ) {
             Surface(
                 shape = RoundedCornerShape(
