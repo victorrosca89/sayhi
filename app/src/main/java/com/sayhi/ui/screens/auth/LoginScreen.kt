@@ -67,7 +67,7 @@ fun LoginScreen(
         Card(
             modifier = Modifier
                 .fillMaxWidth(0.88f)
-                .shadow(24.dp, RoundedCornerShape(32.dp), PurpleDark.copy(alpha = 0.3f)),
+                .shadow(24.dp, RoundedCornerShape(32.dp), ambientColor = PurpleDark.copy(alpha = 0.3f), spotColor = PurpleDark.copy(alpha = 0.3f)),
             shape = RoundedCornerShape(32.dp),
             colors = CardDefaults.cardColors(containerColor = Color.White)
         ) {
@@ -81,7 +81,7 @@ fun LoginScreen(
                 Box(
                     modifier = Modifier
                         .size(72.dp)
-                        .shadow(16.dp, CircleShape, PurplePrimary.copy(alpha = 0.4f))
+                        .shadow(16.dp, CircleShape, ambientColor = PurplePrimary.copy(alpha = 0.4f), spotColor = PurplePrimary.copy(alpha = 0.4f))
                         .background(
                             Brush.linearGradient(colors = listOf(PurplePrimary, PurpleVivid)),
                             CircleShape
@@ -175,7 +175,7 @@ fun LoginScreen(
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(52.dp)
-                        .shadow(12.dp, RoundedCornerShape(26.dp), PurplePrimary.copy(alpha = 0.4f)),
+                        .shadow(12.dp, RoundedCornerShape(26.dp), ambientColor = PurplePrimary.copy(alpha = 0.4f), spotColor = PurplePrimary.copy(alpha = 0.4f)),
                     shape = RoundedCornerShape(26.dp),
                     colors = ButtonDefaults.buttonColors(containerColor = PurplePrimary)
                 ) {
