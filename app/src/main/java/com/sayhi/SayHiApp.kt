@@ -7,9 +7,6 @@ import android.os.Build
 import com.google.firebase.FirebaseApp
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreSettings
-import com.google.firebase.firestore.kt.firestore
-import com.google.firebase.ktx.Firebase
-import com.google.firebase.ktx.initialize
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
