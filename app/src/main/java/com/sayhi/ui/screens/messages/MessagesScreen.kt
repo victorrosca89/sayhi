@@ -47,7 +47,7 @@ fun MessagesScreen(
                 onClick = { /* New chat */ },
                 modifier = Modifier
                     .size(56.dp)
-                    .shadow(12.dp, CircleShape, PurplePrimary.copy(alpha = 0.4f)),
+                    .shadow(12.dp, CircleShape, ambientColor = PurplePrimary.copy(alpha = 0.4f), spotColor = PurplePrimary.copy(alpha = 0.4f)),
                 containerColor = PurplePrimary,
                 shape = CircleShape
             ) {
@@ -242,6 +242,7 @@ fun MessagesScreen(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun ChatItem(
     chat: ChatInfo,
