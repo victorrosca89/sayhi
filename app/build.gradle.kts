@@ -75,7 +75,7 @@ dependencies {
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
 
     // WebRTC
-    implementation("io.github.webrtc-sdk:android:125.6422.07.1")
+    implementation("io.github.webrtc-sdk:android:125.6422.07.1") 
 
     debugImplementation("androidx.compose.ui:ui-tooling")
 }
